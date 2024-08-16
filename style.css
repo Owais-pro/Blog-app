@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.card{
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+}
+.form-group{
+    padding-bottom: 30px;
+}
