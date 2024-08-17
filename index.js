@@ -16,6 +16,7 @@ import {
     addDoc,
     collection,
     getDocs,
+    deleteDoc
   } from "./FireBase.js";
 
 // public or private
@@ -92,7 +93,7 @@ const CreateBlog = async () => {
 const ShowBlog = (Array)=>{
 
   Array.map((event)=>{
-    parent.innerHTML += ` <div class="col-lg-6 col-md-12 col-sm-12 my-2">
+    parent.innerHTML += ` <div class=" my-2">
           <div class="card">
             <h5 class="card-header">
               <img
@@ -107,7 +108,7 @@ const ShowBlog = (Array)=>{
               <p class="card-text">
               ${event.Content}
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-danger" id="${event.id}" onclick="DeleteBlogs(this)">Delete</a>
             </div>
           </div>
         </div>`;
@@ -172,6 +173,27 @@ uploadTask.on(
 });
 };
 
+// Delete Blogs
+
+const DeleteBlogs = async (event) => {
+  try {
+    await deleteDoc(doc(db, "Blogs", event.id));
+    ShowBlog(Array);
+  } catch (error) {
+    console.log(error);
+    
+  }
+}
+    
+
+const LogOut = ()=>{
+  localStorage.removeItem("UserId");
+  localStorage.clear();
+  window.location.replace("./Login.html")
+}
+
+window.LogOut = LogOut;
 window.CreateBlog = CreateBlog;
+window.DeleteBlogs = DeleteBlogs;
 
 

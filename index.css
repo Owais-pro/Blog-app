@@ -1,0 +1,91 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .navbar-light .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background-color: #ffffff;
+  }
+  
+  /* Modal styling */
+  .modal-content {
+    border-radius: 8px;
+  }
+  
+  .modal-header {
+    background-color: #007bff;
+    color: #ffffff;
+    border-bottom: none;
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }
+  
+  .modal-body {
+    padding: 2rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+  }
+  
+  /* Blog display styling */
+  #parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #495057;
+  }
+  

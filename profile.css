@@ -1,0 +1,76 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid #dc3545;
+}
+
+/* Card styling */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px;
+  background: #ffffff;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card li {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 10px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.card li:last-child {
+  border-bottom: none;
+}
+
+/* Button styling */
+.btn-outline-danger {
+  border-color: #dc3545;
+  color: #dc3545;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Container styling */
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+}
